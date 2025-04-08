@@ -61,7 +61,7 @@ Este repositorio contiene el proyecto final del curso **Modelos Predictivos**, d
 
 ## 📚 Referencias
 
-- Dataset original: [Kaggle – Ecommerce Behavior Data](https://www.kaggle.com/)
+- Dataset original: [Kaggle – Ecommerce Consumer Behavior Analysis Data](https://www.kaggle.com/datasets/salahuddinahmedshuvo/ecommerce-consumer-behavior-analysis-data)
 - Documentación de paquetes R: [CRAN R Project](https://cran.r-project.org/)
 - RStudio IDE: [https://www.rstudio.com/](https://www.rstudio.com/)
 
