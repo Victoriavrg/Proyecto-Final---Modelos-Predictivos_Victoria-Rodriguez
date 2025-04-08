@@ -161,9 +161,17 @@ ggplot(data.frame(Predicho = predicciones), aes(x = Predicho)) +
 ggplot(data.frame(Real = test_data$Payment_Method, Predicho = predicciones),
 			 aes(x = Real, fill = Predicho)) +
 	geom_bar(position = "dodge") +
-	scale_fill_manual(values = rep("#AED9E0", length(unique(predicciones)))) +
-	labs(title = "Comparación de Valores Reales vs. Predicciones", x = "Método de Pago Real", y = "Cantidad") +
+	scale_fill_manual(values = c(
+		"Credit Card" = "#66c2a5",
+		"Debit Card"  = "#fc8d62",
+		"Cash"        = "#8da0cb",
+		"PayPal"      = "#e78ac3",
+		"Other"       = "#a6d854"
+	)) +
+	labs(title = "Comparación de Valores Reales vs. Predicciones",
+			 x = "Método de Pago Real", y = "Cantidad", fill = "Predicción") +
 	theme_minimal()
+
 
 # Tasa de aciertos por clase
 aciertos <- predicciones == test_data$Payment_Method
@@ -260,7 +268,17 @@ metodo_mes <- df %>%
 
 ggplot(metodo_mes, aes(x = Mes, y = Cantidad, fill = Payment_Method)) +
 	geom_area(position = "stack", alpha = 0.8) +
-	scale_fill_manual(values = rep("#AED9E0", length(unique(metodo_mes$Payment_Method)))) +
-	labs(title = "Métodos de Pago por Mes", x = "Mes", y = "Cantidad de Transacciones") +
+	scale_fill_manual(values = c(
+		"Credit Card" = "#66c2a5",
+		"Debit Card"  = "#fc8d62",
+		"Cash"        = "#8da0cb",
+		"PayPal"      = "#e78ac3",
+		"Other"       = "#a6d854"
+	)) +
+	labs(title = "Métodos de Pago por Mes",
+			 x = "Mes",
+			 y = "Cantidad de Transacciones",
+			 fill = "Método de Pago") +
 	theme_minimal()
+
 
