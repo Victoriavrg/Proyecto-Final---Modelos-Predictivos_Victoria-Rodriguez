@@ -1,2 +1,3 @@
-# Proyecto-Final---Modelos-Predictivos_Victoria-Rodriguez
+Victoria Rodriguez_Proyecto Final_Modelos Predictivos
 ANÁLISIS DE COMPORTAMIENTO DE COMPRA Y PREDICCIÓN DE MEDIOS DE PAGO EN UN ENTORNO DIGITAL
+
