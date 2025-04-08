@@ -67,6 +67,6 @@ Este repositorio contiene el proyecto final del curso **Modelos Predictivos**, d
 
 ---
 
-¡Gracias por visitar este repositorio! 😊
+¡Gracias totales! 😊
 
 
